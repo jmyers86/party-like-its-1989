@@ -25,7 +25,13 @@ export function App() {
       <main>
         <ul>
           {movies.map(function (movie) {
-            return <Movie title={movie.title} posterImage={movie.poster_path} />
+            return (
+              <Movie
+                title={movie.title}
+                posterImage={movie.poster_path}
+                overview={movie.overview}
+              />
+            )
           })}
         </ul>
       </main>
